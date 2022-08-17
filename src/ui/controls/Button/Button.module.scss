@@ -11,7 +11,7 @@
     background-color: dodgerblue;
     color: white;
 
-    &.hover {
+    &:hover {
       background-color: cornflowerblue;
     }
   }
@@ -20,7 +20,7 @@
     background-color: whitesmoke;
     color: #333;
 
-    &.hover {
+    &:hover {
       background-color: gainsboro;
     }
   }

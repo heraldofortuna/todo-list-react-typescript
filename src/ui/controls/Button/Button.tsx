@@ -4,16 +4,16 @@ import styles from "./Button.module.scss";
 
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  colorSchema?: "primary" | "secondary";
+  colorScheme?: "primary" | "secondary";
 }
 
 const Button: React.FC<Props> = ({
   children,
-  colorSchema = "secondary",
+  colorScheme = "secondary",
   ...props
 }) => {
   return (
-    <button className={`${styles.container} ${styles[colorSchema]}`} {...props}>
+    <button className={`${styles.container} ${styles[colorScheme]}`} {...props}>
       {children}
     </button>
   );

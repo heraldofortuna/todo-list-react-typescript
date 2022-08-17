@@ -2,6 +2,7 @@ import * as React from "react";
 
 import api from "./Item/api";
 import { Item } from "./Item/types";
+import Button from "./ui/controls/Button";
 
 enum Status {
   Init = "init",
@@ -29,6 +30,15 @@ const App: React.FC = () => {
         <h1>Supermarket List</h1>
         <h3>{items.length} item(s)</h3>
       </header>
+      <ul>
+        {items.map((item) => (
+          <li key={item.id}>
+            {item.text}
+            <button>delete</button>
+          </li>
+        ))}
+      </ul>
+      <Button colorScheme="primary">Add Item</Button>
     </main>
   );
 };
