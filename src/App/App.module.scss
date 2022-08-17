@@ -1,0 +1,56 @@
+// Container
+.container {
+  width: 100%;
+  max-width: 480px;
+
+  .header {
+    h1 {
+      font-weight: 700;
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-weight: 300;
+      font-size: 1.25rem;
+      margin: 16px 0;
+    }
+  }
+
+  & > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+
+    li {
+      width: 100%;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 4px;
+      padding: 8px 12px;
+
+      box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.29);
+      -webkit-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.25);
+
+      button {
+        background-color: none;
+        border: none;
+        font-style: italic;
+        font-weight: 500;
+        cursor: pointer;
+        transition: color 0.25s ease-in-out;
+
+        &:hover {
+          color: crimson;
+        }
+      }
+    }
+  }
+
+  & > button {
+    width: 100%;
+  }
+}
